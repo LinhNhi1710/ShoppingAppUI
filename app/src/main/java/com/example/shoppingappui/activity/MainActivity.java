@@ -6,7 +6,6 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.Toolbar;
 import android.widget.ViewFlipper;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -34,7 +33,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    Toolbar toolbar;
+    androidx.appcompat.widget.Toolbar toolbar;
     ViewFlipper viewFlipper;
     RecyclerView recyclerViewmanhinhchinh;
     NavigationView navigationView;
@@ -142,7 +141,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void AnhXa() {
-        toolbar =  (Toolbar) findViewById(R.id.toolbarmanhinhchinh);
+        toolbar =  (androidx.appcompat.widget.Toolbar) findViewById(R.id.toolbarmanhinhchinh);
         viewFlipper = (ViewFlipper)  findViewById((R.id.viewlipper));
         recyclerViewmanhinhchinh = (RecyclerView) findViewById(R.id.recycleview);
         navigationView = (NavigationView) findViewById((R.id.navigationview));
